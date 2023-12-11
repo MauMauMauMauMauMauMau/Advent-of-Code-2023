@@ -101,7 +101,7 @@ elif west_applicable and south_applicable:
 elif south_applicable and east_applicable:
     lines[start[1]] = lines[start[1]].replace('S', 'F')
 
-# find area
+# find area!
 area = 0
 for y, line in enumerate(lines):
     for x, char in enumerate(line):
