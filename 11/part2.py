@@ -28,7 +28,7 @@ for i, galaxy1 in enumerate(galaxy_coords):
         x2, y2 = galaxy2
         sum += abs(x2 - x1) + abs(y2 - y1)
         for x in range(min(x1, x2), max(x1, x2)):
-            if x in columns_wo_galaxies: sum += 1
+            if x in columns_wo_galaxies: sum += 1000000 - 1
         for y in range(min(y1, y2), max(y1, y2)):
-            if y in lines_wo_galaxies: sum += 1
+            if y in lines_wo_galaxies: sum += 1000000 - 1
 print(sum)
